@@ -1,0 +1,333 @@
+/* ------ GENERAL SETTINGS ----- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Radley", Arial, sans-serif;
+    font-weight: lighter;
+}
+
+p {
+    font-family: "Space Mono", Arial, sans-serif;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 45px;
+    letter-spacing: 1px;
+    padding: 50px 0;
+}
+
+/* ----- HEADER ----- */
+
+.web-header {
+    height: 700px;
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.web-nav-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.web-nav-list li {
+    list-style: none;
+    font-family: "Space Mono", Arial, sans-serif;
+    display: inline-block;
+    padding: 0 30px;
+}
+
+.web-nav-list a {
+    text-transform: none;
+}
+
+.header-text {
+    color: white;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.header-text h1 {
+    font-size: 200px;
+    font-weight: lighter;
+}
+
+.header-text p {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+/* ----- SECTION 1 ----- */
+
+.content-skillset {
+    position: relative;
+    height: 800px;
+}
+
+.content-skillset-social {
+    width: 50px;
+    height: 200px;
+    position: absolute;
+    top: 150px;
+}
+
+.content-skillset .inside-container {  /* <----- ZMIEN TO JAKBY CO!!!!*/
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.content-skillset-right,
+.content-skillset-left {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+
+.content-skillset-right {
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+}
+
+.content-skillset-right img {
+    height: 520px;
+    width: 400px;
+}
+
+.author {
+    padding-top: 60px;
+}
+
+.author figcaption {
+    font-family: "Space Mono", Arial, sans-serif;
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+.content-skillset-right {
+    background-image: url("../img/cross.svg");
+    background-repeat: no-repeat;
+    background-size: 400px 300px;
+    background-position: top left;
+}
+
+.content-skillset-left {
+    height: 100%;
+}
+
+.content-skillset-left ul {
+    width: 430px;
+    padding-bottom: 20px;
+}
+
+.content-skillset-left li {
+    list-style: none;
+    font-family: "Radley", Arial, sans-serif;
+    font-weight: lighter;
+    border-bottom: #dfdfdf 1px solid;
+    padding: 10px 0;
+}
+
+.content-skillset-left a {
+    font-family: "Space Mono", Arial, sans-serif;
+    color: #FF4907;
+}
+
+/* ----- SECTION 2 ----- */
+
+.projects  {
+    height: 950px;
+}
+
+.projects-header {
+    padding-bottom: 40px;
+}
+
+.projects .inside-container {
+    width: 100%;
+    display: flex;
+}
+
+.project-list {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+
+.project-list.picture {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-list img {
+    align-self: center;
+    padding-bottom: 30px;
+}
+
+.project-list img.bigger-img {
+    width: 395px;
+    height: 585px;
+}
+
+.project-list img.smaller-img {
+    width: 360px;
+    height: 545px;
+}
+
+.project-list h3 {
+    color: #FF4907;
+    font-size: 27px;
+    font-weight: lighter;
+    padding-bottom: 20px;
+}
+
+.project-list p {
+    padding-bottom: 60px;
+}
+
+.project-list:nth-child(2) p,
+.project-list:nth-child(2) h3 {
+    padding-left: 20px;
+}
+
+
+/* ----- SECTION 3 ----- */
+
+.updates span {
+    color: #FF4907;
+}
+
+.updates .inside-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.updates img {
+    width: 270px;
+    height: 270px;
+}
+
+.updates a {
+    color: #FF4907;
+    font-family: "Space Mono", Arial, sans-serif;
+    font-size: 19px;
+    font-weight: lighter;
+}
+
+.updates .container {
+    padding-bottom: 50px;
+}
+
+/* ----- SECTION 4 ----- */
+
+.in-touch .header-container {
+    padding-top: 50px;
+}
+
+.big-text {
+    text-align: center;
+    font-size: 100px;
+    font-family: "Radley", Arial, sans-serif;
+    font-weight: lighter;
+}
+
+.big-text-div {
+    background-image: url("../img/line.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 160px;
+}
+
+.in-touch-contact {
+    padding-top: 30px;
+    padding-bottom: 90px;
+    text-align: center;
+    font-size: 19px;
+    font-weight: lighter;
+}
+
+.web-footer {
+    height: 120px;
+    background-color: #f2f2f2;
+}
+
+.web-footer .container {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.web-footer p {
+    font-size: 13px;
+}
+
+.web-footer a {
+    color: #FF4907;
+}
+
+/* ----- FOOTER ----- */
+
+/*FONTS*/
+
+/* latin-ext */
+@font-face {
+    font-family: 'Radley';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Radley Regular'), local('Radley-Regular'), url(https://fonts.gstatic.com/s/radley/v12/LYjDdGzinEIjCN1NqQNFh1gnVOfe.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Radley';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Radley Regular'), local('Radley-Regular'), url(https://fonts.gstatic.com/s/radley/v12/LYjDdGzinEIjCN1NpwNFh1gnVA.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Space Mono'), local('SpaceMono-Regular'), url(https://fonts.gstatic.com/s/spacemono/v3/i7dPIFZifjKcF5UAWdDRYE58RXi4EwSsbg.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Space Mono'), local('SpaceMono-Regular'), url(https://fonts.gstatic.com/s/spacemono/v3/i7dPIFZifjKcF5UAWdDRYE98RXi4EwSsbg.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Space Mono'), local('SpaceMono-Regular'), url(https://fonts.gstatic.com/s/spacemono/v3/i7dPIFZifjKcF5UAWdDRYEF8RXi4EwQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
